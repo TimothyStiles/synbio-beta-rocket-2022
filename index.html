@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="presentation-friday/00-poly-creation.jpg" data-background-size="contain"></section>
+
+				<section data-background="presentation-friday/01-something-of-a-scientist.jpg" data-background-size="contain"></section>
+
+				<section data-background="presentation-friday/02-spongetrash.jpg" data-background-size="contain"></section>
+
+				<section data-background="presentation-friday/03-George-Church-spaghetti.png" data-background-size="contain"></section>
+				
+				<section>I get a call from Keoni</section>
+
+				<section>“There’s no way to convert genbank to JSON and back again and my biopython script keeps breaking. ”</section>
+
+				<section>lol wut</section>
+
+				<section data-background="presentation-friday/two-weeks-later.png" data-background-size="contain"></section>
+
+				<section data-background="presentation-friday/gbk-parser.png" data-background-size="contain"></section>
+
+				<section>wait no one can do synbio cause no one can parse genbank</section>
+
+				<section>wtf</section>
+
+				<section>begin building more</section>
+
+				<section>everything is super tested (97% code coverage)</section>
+
+				<section>Even the examples in the documentation are tests</section>
+
+				<section><a href="https://pkg.go.dev/github.com/TimothyStiles/poly@v0.14.0/io/fasta#example-package-Basic">Documentation and code will never break after shipping</a></section>
+
+				<section>Write code so that everyone can understand it</section>
+
+				<section>No single letter variables or mangled one liners</section>
+
+				<section>Next slide is me seeing single variables in code review</section>
+
+				<section data-background="presentation-friday/ant-variables.jpg" data-background-size="contain"></section>
+
+				<section>Start forming a gang of random internet nerds</section>
+
+				<section data-background="presentation-friday/nerds.png" data-background-size="contain"> </section>
+
+				<section data-background="presentation-friday/contributors.png" data-background-size="contain"></section>
+
+				<section>That last slide was blurry but you should check out our contributors graph on github</section>
+
+				<section>
+					<h4>What we've done that I can remember at 12 AM the night before this talk</h4>
+					<ul>
+						<li>
+							Parsers for genbank, gff, fasta, uniprot, and more that I can't remember
+						</li>
+						<li>
+							JSON schema for DNA sequences (why are we the first?)
+						</li>
+						<li>
+							First open source hashing algorithm for plasmids that accounts for sequence circularity
+						</li>
+						<li>
+							Primer designs tools and simulation
+						</li>
+						<li>
+							Codon optimization and <a href="https://pkg.go.dev/github.com/TimothyStiles/poly@v0.14.0/synthesis/fix">DNA synthesis</a>
+						</li>
+						<li>
+							Cloning simulation
+						</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h4>What we're working on and what's next</h4>
+					<ul>
+						<li>
+							Allbase
+						</li>
+						<li>
+							Protein engineering and ML ops
+						</li>
+						<li>
+							Metabolic engineering and pathway querying over all of allbase
+						</li>
+						<li>
+							Deploying ribosome binding site calculator
+						</li>
+						<li>
+							Genome engineering with CRISPR multiplexing
+						</li>
+					</ul>
+				</section>
+				<section>How can you help?</section>
+				<Section>$$$ </Section>
+				<section>https://github.com/sponsors/TimothyStiles </section>
+				<section>Use Poly in your projects! </section>
+				<section>Requests features and review pull requests</section></section>
+				<section>But no, really tho</section>
+				<section>https://github.com/sponsors/TimothyStiles </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
